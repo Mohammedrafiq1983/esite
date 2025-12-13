@@ -7,7 +7,8 @@
 body {
   background-color: white;
   color: rgb(17 24 39);
-  font-feature-settings: "rlig" 1, "calt" 1;
+  font-family: 'Tajawal', sans-serif;
+  font-feature-settings: "rlig" 1, "calt" 1, "liga" 1;
 }
 
 /* RTL Support */
@@ -17,6 +18,19 @@ body {
 
 [dir="ltr"] {
   direction: ltr;
+}
+
+/* RTL-specific utilities */
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] * {
+  text-align: start;
 }
 
 /* Custom Scrollbar */

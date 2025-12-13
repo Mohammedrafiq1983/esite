@@ -89,22 +89,22 @@ model VerificationToken {
 // ============================================================================
 
 model StudentProfile {
-  id        String   @id @default(cuid())
-  userId    String   @unique
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id        String         @id @default(cuid())
+  userId    String         @unique
+  user      User           @relation(fields: [userId], references: [id], onDelete: Cascade)
   grade     Grade
   school    String?
   parentId  String?
   parent    ParentProfile? @relation(fields: [parentId], references: [id])
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
 
   // Relations
-  enrollments Enrollment[]
-  progress    Progress[]
-  quizAttempts QuizAttempt[]
-  assignmentSubmissions AssignmentSubmission[]
-  reviews     Review[]
+  enrollments            Enrollment[]
+  progress               Progress[]
+  quizAttempts           QuizAttempt[]
+  assignmentSubmissions  AssignmentSubmission[]
+  reviews                Review[]
   liveSessionAttendances LiveSessionAttendance[]
 
   @@index([userId])
@@ -122,18 +122,18 @@ enum Grade {
 }
 
 model TeacherProfile {
-  id              String   @id @default(cuid())
-  userId          String   @unique
-  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  bio             String?  @db.Text
+  id              String    @id @default(cuid())
+  userId          String    @unique
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bio             String?   @db.Text
   specializations Subject[]
   experience      Int?
   education       String?
-  isVerified      Boolean  @default(false)
-  rating          Float    @default(0)
-  totalStudents   Int      @default(0)
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  isVerified      Boolean   @default(false)
+  rating          Float     @default(0)
+  totalStudents   Int       @default(0)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
 
   // Relations
   courses      Course[]
@@ -172,34 +172,32 @@ model ParentProfile {
 // ============================================================================
 
 model Course {
-  id            String        @id @default(cuid())
-  title         String
-  titleAr       String?
-  description   String        @db.Text
-  descriptionAr String?       @db.Text
-  teacherId     String
-  teacher       TeacherProfile @relation(fields: [teacherId], references: [id], onDelete: Cascade)
-  subject       Subject
-  grade         Grade
-  level         CourseLevel   @default(BEGINNER)
-  price         Int
-  thumbnail     String?
-  previewVideo  String?
-  status        CourseStatus  @default(DRAFT)
-  enrollmentCount Int         @default(0)
-  rating        Float         @default(0)
-  createdAt     DateTime      @default(now())
-  updatedAt     DateTime      @updatedAt
-  publishedAt   DateTime?
+  id              String         @id @default(cuid())
+  title           String
+  description     String         @db.Text
+  teacherId       String
+  teacher         TeacherProfile @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  subject         Subject
+  grade           Grade
+  level           CourseLevel    @default(BEGINNER)
+  price           Int
+  thumbnail       String?
+  previewVideo    String?
+  status          CourseStatus   @default(DRAFT)
+  enrollmentCount Int            @default(0)
+  rating          Float          @default(0)
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  publishedAt     DateTime?
 
   // Relations
-  categories   CourseCategory[]
-  lessons      Lesson[]
-  enrollments  Enrollment[]
-  quizzes      Quiz[]
-  assignments  Assignment[]
-  resources    Resource[]
-  reviews      Review[]
+  categories  CourseCategory[]
+  lessons     Lesson[]
+  enrollments Enrollment[]
+  quizzes     Quiz[]
+  assignments Assignment[]
+  resources   Resource[]
+  reviews     Review[]
 
   @@index([teacherId])
   @@index([subject])
@@ -223,7 +221,6 @@ enum CourseStatus {
 model CourseCategory {
   id        String   @id @default(cuid())
   name      String
-  nameAr    String?
   slug      String   @unique
   courses   Course[]
   createdAt DateTime @default(now())
@@ -232,18 +229,17 @@ model CourseCategory {
 }
 
 model Lesson {
-  id           String   @id @default(cuid())
-  courseId     String
-  course       Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  title        String
-  titleAr      String?
-  description  String?  @db.Text
-  videoUrl     String?
-  duration     Int?
-  order        Int
-  isFree       Boolean  @default(false)
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id          String   @id @default(cuid())
+  courseId    String
+  course      Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  title       String
+  description String?  @db.Text
+  videoUrl    String?
+  duration    Int?
+  order       Int
+  isFree      Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 
   // Relations
   progress  Progress[]
@@ -282,17 +278,16 @@ enum ResourceType {
 // ============================================================================
 
 model Quiz {
-  id            String   @id @default(cuid())
-  courseId      String
-  course        Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  title         String
-  titleAr       String?
-  description   String?  @db.Text
-  timeLimit     Int?
-  passingScore  Int      @default(70)
-  maxAttempts   Int      @default(3)
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  id           String   @id @default(cuid())
+  courseId     String
+  course       Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  title        String
+  description  String?  @db.Text
+  timeLimit    Int?
+  passingScore Int      @default(70)
+  maxAttempts  Int      @default(3)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 
   // Relations
   questions Question[]
@@ -307,7 +302,6 @@ model Question {
   quiz          Quiz         @relation(fields: [quizId], references: [id], onDelete: Cascade)
   type          QuestionType
   questionText  String       @db.Text
-  questionTextAr String?     @db.Text
   options       Json?
   correctAnswer String?
   points        Int          @default(1)
@@ -325,31 +319,30 @@ enum QuestionType {
 }
 
 model QuizAttempt {
-  id          String   @id @default(cuid())
+  id          String         @id @default(cuid())
   quizId      String
-  quiz        Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  quiz        Quiz           @relation(fields: [quizId], references: [id], onDelete: Cascade)
   studentId   String
   student     StudentProfile @relation(fields: [studentId], references: [id], onDelete: Cascade)
   answers     Json
   score       Int
   passed      Boolean
-  completedAt DateTime @default(now())
+  completedAt DateTime       @default(now())
 
   @@index([quizId])
   @@index([studentId])
 }
 
 model Assignment {
-  id          String   @id @default(cuid())
+  id          String    @id @default(cuid())
   courseId    String
-  course      Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  course      Course    @relation(fields: [courseId], references: [id], onDelete: Cascade)
   title       String
-  titleAr     String?
-  description String   @db.Text
+  description String    @db.Text
   dueDate     DateTime?
-  maxScore    Int      @default(100)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  maxScore    Int       @default(100)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
 
   // Relations
   submissions AssignmentSubmission[]
@@ -358,16 +351,16 @@ model Assignment {
 }
 
 model AssignmentSubmission {
-  id           String   @id @default(cuid())
+  id           String         @id @default(cuid())
   assignmentId String
-  assignment   Assignment @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
+  assignment   Assignment     @relation(fields: [assignmentId], references: [id], onDelete: Cascade)
   studentId    String
   student      StudentProfile @relation(fields: [studentId], references: [id], onDelete: Cascade)
-  content      String   @db.Text
+  content      String         @db.Text
   fileUrl      String?
   score        Int?
-  feedback     String?  @db.Text
-  submittedAt  DateTime @default(now())
+  feedback     String?        @db.Text
+  submittedAt  DateTime       @default(now())
   gradedAt     DateTime?
 
   @@index([assignmentId])
@@ -379,16 +372,16 @@ model AssignmentSubmission {
 // ============================================================================
 
 model Enrollment {
-  id              String   @id @default(cuid())
-  courseId        String
-  course          Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
-  studentId       String
-  student         StudentProfile @relation(fields: [studentId], references: [id], onDelete: Cascade)
-  enrolledAt      DateTime @default(now())
-  completedAt     DateTime?
-  progress        Int      @default(0)
-  certificateUrl  String?
-  expiresAt       DateTime?
+  id             String         @id @default(cuid())
+  courseId       String
+  course         Course         @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  studentId      String
+  student        StudentProfile @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  enrolledAt     DateTime       @default(now())
+  completedAt    DateTime?
+  progress       Int            @default(0)
+  certificateUrl String?
+  expiresAt      DateTime?
 
   @@unique([courseId, studentId])
   @@index([studentId])
@@ -396,17 +389,17 @@ model Enrollment {
 }
 
 model Progress {
-  id          String   @id @default(cuid())
-  lessonId    String
-  lesson      Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
-  studentId   String
-  student     StudentProfile @relation(fields: [studentId], references: [id], onDelete: Cascade)
-  completed   Boolean  @default(false)
-  watchTime   Int      @default(0)
-  lastPosition Int     @default(0)
-  completedAt DateTime?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id           String         @id @default(cuid())
+  lessonId     String
+  lesson       Lesson         @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  studentId    String
+  student      StudentProfile @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  completed    Boolean        @default(false)
+  watchTime    Int            @default(0)
+  lastPosition Int            @default(0)
+  completedAt  DateTime?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
 
   @@unique([lessonId, studentId])
   @@index([studentId])
@@ -418,23 +411,22 @@ model Progress {
 // ============================================================================
 
 model LiveSession {
-  id            String   @id @default(cuid())
-  title         String
-  titleAr       String?
-  description   String?  @db.Text
-  teacherId     String
-  teacher       TeacherProfile @relation(fields: [teacherId], references: [id], onDelete: Cascade)
-  subject       Subject
-  grade         Grade
-  scheduledAt   DateTime
-  duration      Int
-  maxStudents   Int      @default(50)
-  price         Int      @default(0)
-  meetingUrl    String?
-  recordingUrl  String?
-  status        SessionStatus @default(SCHEDULED)
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  id           String         @id @default(cuid())
+  title        String
+  description  String?        @db.Text
+  teacherId    String
+  teacher      TeacherProfile @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  subject      Subject
+  grade        Grade
+  scheduledAt  DateTime
+  duration     Int
+  maxStudents  Int            @default(50)
+  price        Int            @default(0)
+  meetingUrl   String?
+  recordingUrl String?
+  status       SessionStatus  @default(SCHEDULED)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
 
   // Relations
   attendances LiveSessionAttendance[]
@@ -452,15 +444,15 @@ enum SessionStatus {
 }
 
 model LiveSessionAttendance {
-  id        String      @id @default(cuid())
+  id        String         @id @default(cuid())
   sessionId String
-  session   LiveSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  session   LiveSession    @relation(fields: [sessionId], references: [id], onDelete: Cascade)
   studentId String
   student   StudentProfile @relation(fields: [studentId], references: [id], onDelete: Cascade)
   joinedAt  DateTime?
   leftAt    DateTime?
-  attended  Boolean     @default(false)
-  createdAt DateTime    @default(now())
+  attended  Boolean        @default(false)
+  createdAt DateTime       @default(now())
 
   @@unique([sessionId, studentId])
   @@index([sessionId])
@@ -472,16 +464,16 @@ model LiveSessionAttendance {
 // ============================================================================
 
 model Payment {
-  id            String      @id @default(cuid())
-  userId        String
-  amount        Int
-  currency      String      @default("IQD")
-  type          PaymentType
-  status        PaymentStatus @default(PENDING)
-  stripePaymentId String?   @unique
-  metadata      Json?
-  createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
+  id              String        @id @default(cuid())
+  userId          String
+  amount          Int
+  currency        String        @default("IQD")
+  type            PaymentType
+  status          PaymentStatus @default(PENDING)
+  stripePaymentId String?       @unique
+  metadata        Json?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
 
   @@index([userId])
   @@index([status])
@@ -506,17 +498,17 @@ enum PaymentStatus {
 // ============================================================================
 
 model Review {
-  id        String   @id @default(cuid())
+  id        String          @id @default(cuid())
   courseId  String?
-  course    Course?  @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  course    Course?         @relation(fields: [courseId], references: [id], onDelete: Cascade)
   teacherId String?
   teacher   TeacherProfile? @relation(fields: [teacherId], references: [id], onDelete: Cascade)
   studentId String
-  student   StudentProfile @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  student   StudentProfile  @relation(fields: [studentId], references: [id], onDelete: Cascade)
   rating    Int
-  comment   String?  @db.Text
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  comment   String?         @db.Text
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
 
   @@index([courseId])
   @@index([teacherId])
@@ -524,16 +516,14 @@ model Review {
 }
 
 model Notification {
-  id        String   @id @default(cuid())
+  id        String           @id @default(cuid())
   userId    String
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
   title     String
-  titleAr   String?
-  message   String   @db.Text
-  messageAr String?  @db.Text
+  message   String           @db.Text
   type      NotificationType
-  read      Boolean  @default(false)
-  createdAt DateTime @default(now())
+  read      Boolean          @default(false)
+  createdAt DateTime         @default(now())
 
   @@index([userId])
   @@index([read])

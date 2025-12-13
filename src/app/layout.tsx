@@ -8,9 +8,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Edariss - E-Learning Platform for Iraqi Students",
-  description: "Modern e-learning platform connecting Iraqi teachers with students for supplementary education",
-  keywords: ["elearning", "iraq", "education", "online courses", "tutoring"],
+  title: "إدارس - منصة التعليم الإلكتروني",
+  description: "منصة تعليمية عراقية تربط الطلاب بأفضل المعلمين للتعليم التكميلي",
+  keywords: ["تعليم", "دورات", "معلمون", "العراق", "كركوك", "تعليم إلكتروني"],
 };
 
 export default function RootLayout({
@@ -19,14 +19,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="ltr">
+    <html lang="ar" dir="rtl">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className={`${inter.variable} font-inter antialiased`}>
+      <body className="font-tajawal antialiased">
         {children}
       </body>
     </html>

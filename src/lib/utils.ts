@@ -6,8 +6,8 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatDate(date: Date | string): string {
-  return new Date(date).toLocaleDateString("en-US", {
-    month: "short",
+  return new Date(date).toLocaleDateString("ar-IQ", {
+    month: "long",
     day: "numeric",
     year: "numeric",
   });
@@ -27,12 +27,12 @@ export function formatDuration(seconds: number): string {
   const secs = seconds % 60;
 
   if (hours > 0) {
-    return `${hours}h ${minutes}m`;
+    return `${hours} ساعة ${minutes} دقيقة`;
   }
   if (minutes > 0) {
-    return `${minutes}m ${secs}s`;
+    return `${minutes} دقيقة ${secs} ثانية`;
   }
-  return `${secs}s`;
+  return `${secs} ثانية`;
 }
 
 export function truncate(str: string, length: number): string {

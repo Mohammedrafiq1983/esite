@@ -42,6 +42,7 @@ const config: Config = {
         },
       },
       fontFamily: {
+        sans: ['Tajawal', 'sans-serif'],
         tajawal: ['Tajawal', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
       },
