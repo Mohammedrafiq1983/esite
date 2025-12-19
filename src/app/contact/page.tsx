@@ -271,14 +271,18 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Map Section (Placeholder) */}
+        {/* Map Section */}
         <section className="h-96 bg-gray-200">
-          <div className="w-full h-full flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600">كركوك، جمهورية العراق</p>
-            </div>
-          </div>
+          <iframe
+            src="https://www.google.com/maps?q=35.42560051589802,44.35494256624158&hl=ar&z=15&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="موقع مكتب eDariss في كركوك"
+          />
         </section>
       </main>
 
