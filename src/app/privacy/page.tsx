@@ -3,8 +3,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 export const metadata = {
-  title: 'سياسة الخصوصية - إدارس',
-  description: 'سياسة الخصوصية وحماية البيانات في منصة إدارس التعليمية',
+  title: 'سياسة الخصوصية - eDariss',
+  description: 'سياسة الخصوصية وحماية البيانات في منصة eDariss التعليمية',
 };
 
 export default function PrivacyPage() {
@@ -79,10 +79,10 @@ export default function PrivacyPage() {
                   </h2>
                   <div className="mr-13 text-gray-700 leading-relaxed space-y-4">
                     <p>
-                      مرحباً بك في منصة إدارس. نحن نقدر ثقتك بنا ونلتزم بحماية خصوصيتك وأمان معلوماتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحمايتنا ومشاركتنا للمعلومات التي تقدمها لنا عند استخدام منصتنا.
+                      مرحباً بك في منصة eDariss. نحن نقدر ثقتك بنا ونلتزم بحماية خصوصيتك وأمان معلوماتك الشخصية. توضح سياسة الخصوصية هذه كيفية جمعنا واستخدامنا وحمايتنا ومشاركتنا للمعلومات التي تقدمها لنا عند استخدام منصتنا.
                     </p>
                     <p>
-                      باستخدامك لمنصة إدارس، فإنك توافق على جمع واستخدام المعلومات وفقاً لهذه السياسة.
+                      باستخدامك لمنصة eDariss، فإنك توافق على جمع واستخدام المعلومات وفقاً لهذه السياسة.
                     </p>
                   </div>
                 </div>
@@ -289,7 +289,7 @@ export default function PrivacyPage() {
                       إذا كان لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه أو ممارساتنا المتعلقة بالخصوصية، يرجى التواصل معنا:
                     </p>
                     <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                      <p className="font-semibold text-gray-900 mb-3">منصة إدارس</p>
+                      <p className="font-semibold text-gray-900 mb-3">منصة eDariss</p>
                       <ul className="space-y-2 text-sm">
                         <li>البريد الإلكتروني: <a href="mailto:privacy@edariss.com" className="text-primary-600 hover:text-primary-800">privacy@edariss.com</a></li>
                         <li>الهاتف: <span dir="ltr">+966 12 345 6789</span></li>

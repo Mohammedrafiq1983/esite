@@ -4,7 +4,7 @@ import { BookOpen, Users, Star, Clock } from "lucide-react";
 import Link from "next/link";
 
 export const metadata = {
-  title: "الدورات التعليمية - إدارس",
+  title: "الدورات التعليمية - eDariss",
   description: "تصفح مئات الدورات التعليمية للمنهج العراقي في الرياضيات، الفيزياء، الكيمياء واللغات",
 };
 

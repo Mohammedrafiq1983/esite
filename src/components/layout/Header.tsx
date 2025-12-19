@@ -35,7 +35,7 @@ export function Header() {
 
         {/* Logo (Left in RTL) */}
         <Link href="/" className="text-2xl font-bold text-primary-600">
-          إدارس
+          eDariss
         </Link>
 
         {/* Mobile Menu */}

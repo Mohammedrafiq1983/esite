@@ -5,8 +5,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
 export const metadata = {
-  title: 'تسجيل الدخول - إدارس',
-  description: 'سجل دخولك للوصول إلى حسابك على منصة إدارس التعليمية',
+  title: 'تسجيل الدخول - eDariss',
+  description: 'سجل دخولك للوصول إلى حسابك على منصة eDariss التعليمية',
 };
 
 export default function LoginPage() {
@@ -17,7 +17,7 @@ export default function LoginPage() {
         <div className="text-center mb-8 animate-fade-in">
           <Link href="/" className="inline-block">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
-              إدارس
+              eDariss
             </h1>
           </Link>
           <h2 className="mt-4 text-3xl font-bold text-gray-900">

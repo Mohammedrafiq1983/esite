@@ -3,8 +3,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 export const metadata = {
-  title: 'شروط الخدمة - إدارس',
-  description: 'شروط وأحكام استخدام منصة إدارس التعليمية',
+  title: 'شروط الخدمة - eDariss',
+  description: 'شروط وأحكام استخدام منصة eDariss التعليمية',
 };
 
 export default function TermsPage() {
@@ -24,7 +24,7 @@ export default function TermsPage() {
                 شروط الخدمة
               </h1>
               <p className="text-xl text-primary-100">
-                يرجى قراءة هذه الشروط بعناية قبل استخدام منصة إدارس
+                يرجى قراءة هذه الشروط بعناية قبل استخدام منصة eDariss
               </p>
               <p className="text-sm text-primary-200 mt-4">
                 آخر تحديث: 18 ديسمبر 2025
@@ -79,7 +79,7 @@ export default function TermsPage() {
                   </h2>
                   <div className="mr-13 text-gray-700 leading-relaxed space-y-4">
                     <p>
-                      مرحباً بك في منصة إدارس ("المنصة" أو "الخدمة"). باستخدامك للمنصة، فإنك توافق على الالتزام بهذه الشروط والأحكام ("الشروط"). إذا كنت لا توافق على هذه الشروط، يرجى عدم استخدام المنصة.
+                      مرحباً بك في منصة eDariss ("المنصة" أو "الخدمة"). باستخدامك للمنصة، فإنك توافق على الالتزام بهذه الشروط والأحكام ("الشروط"). إذا كنت لا توافق على هذه الشروط، يرجى عدم استخدام المنصة.
                     </p>
                     <p>
                       نحتفظ بالحق في تعديل هذه الشروط في أي وقت. سيتم إشعارك بأي تغييرات جوهرية، واستمرارك في استخدام المنصة بعد هذه التغييرات يعني موافقتك عليها.
@@ -122,7 +122,7 @@ export default function TermsPage() {
                     الخدمات المقدمة
                   </h2>
                   <div className="mr-13 text-gray-700 leading-relaxed space-y-4">
-                    <p>توفر منصة إدارس الخدمات التالية:</p>
+                    <p>توفر منصة eDariss الخدمات التالية:</p>
                     <ul className="list-disc mr-6 space-y-2">
                       <li>الوصول إلى الدورات التعليمية المسجلة والمباشرة</li>
                       <li>التواصل مع المعلمين والطلاب</li>
@@ -321,7 +321,7 @@ export default function TermsPage() {
                       إذا كان لديك أي أسئلة حول هذه الشروط، يرجى التواصل معنا:
                     </p>
                     <div className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                      <p className="font-semibold text-gray-900 mb-3">منصة إدارس</p>
+                      <p className="font-semibold text-gray-900 mb-3">منصة eDariss</p>
                       <ul className="space-y-2 text-sm">
                         <li>البريد الإلكتروني: <a href="mailto:legal@edariss.com" className="text-primary-600 hover:text-primary-800">legal@edariss.com</a></li>
                         <li>الهاتف: <span dir="ltr">+966 12 345 6789</span></li>

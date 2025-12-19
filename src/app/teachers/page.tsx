@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Users, Award, Star, BookOpen, CheckCircle } from "lucide-react";
 
 export const metadata = {
-  title: "المعلمون - إدارس",
+  title: "المعلمون - eDariss",
   description: "تعرف على أفضل المعلمين المعتمدين في العراق. معلمون ذوو خبرة في الرياضيات، العلوم، الفيزياء، الكيمياء واللغات",
 };
 
@@ -193,7 +193,7 @@ export default function TeachersPage() {
             هل أنت معلم؟
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            انضم إلى منصة إدارس وابدأ بتدريس آلاف الطلاب في جميع أنحاء العراق
+            انضم إلى منصة eDariss وابدأ بتدريس آلاف الطلاب في جميع أنحاء العراق
           </p>
           <button className="px-8 py-4 bg-white text-primary-600 rounded-lg text-lg font-semibold hover:bg-gray-100 transition shadow-lg">
             سجل كمعلم

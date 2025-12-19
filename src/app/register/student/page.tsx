@@ -5,8 +5,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
 export const metadata = {
-  title: 'التسجيل كطالب - إدارس',
-  description: 'أنشئ حسابك كطالب على منصة إدارس التعليمية',
+  title: 'التسجيل كطالب - eDariss',
+  description: 'أنشئ حسابك كطالب على منصة eDariss التعليمية',
 };
 
 export default function StudentRegisterPage() {

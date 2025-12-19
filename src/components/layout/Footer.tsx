@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About + Location */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">إدارس</h3>
+            <h3 className="text-white text-lg font-bold mb-4">eDariss</h3>
             <p className="mb-4 text-sm leading-relaxed">
               منصة التعليم الإلكتروني الرائدة في العراق
             </p>
@@ -85,7 +85,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
-          <p>© 2024 إدارس. جميع الحقوق محفوظة.</p>
+          <p>© 2024 eDariss. جميع الحقوق محفوظة.</p>
         </div>
       </div>
     </footer>

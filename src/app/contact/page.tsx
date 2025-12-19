@@ -6,8 +6,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 export const metadata = {
-  title: 'اتصل بنا - إدارس',
-  description: 'تواصل مع فريق إدارس. نحن هنا لمساعدتك والإجابة على استفساراتك',
+  title: 'اتصل بنا - eDariss',
+  description: 'تواصل مع فريق eDariss. نحن هنا لمساعدتك والإجابة على استفساراتك',
 };
 
 export default function ContactPage() {
@@ -202,7 +202,7 @@ export default function ContactPage() {
                   {/* FAQ Item 1 */}
                   <div className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-primary-300 transition-colors">
                     <h3 className="font-semibold text-gray-900 mb-2">
-                      كيف يمكنني التسجيل في منصة إدارس؟
+                      كيف يمكنني التسجيل في منصة eDariss؟
                     </h3>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       يمكنك التسجيل بسهولة من خلال زيارة صفحة التسجيل واختيار نوع الحساب (طالب أو معلم) وملء البيانات المطلوبة.

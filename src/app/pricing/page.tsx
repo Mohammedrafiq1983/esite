@@ -6,8 +6,8 @@ import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 
 export const metadata = {
-  title: 'الأسعار والباقات - إدارس',
-  description: 'اختر الباقة المناسبة لك وابدأ رحلتك التعليمية مع إدارس',
+  title: 'الأسعار والباقات - eDariss',
+  description: 'اختر الباقة المناسبة لك وابدأ رحلتك التعليمية مع eDariss',
 };
 
 const pricingPlans = [

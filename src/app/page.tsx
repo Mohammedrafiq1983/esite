@@ -55,7 +55,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              لماذا تختار إدارس؟
+              لماذا تختار eDariss؟
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               كل ما تحتاجه للتعلم الإلكتروني الناجح
@@ -146,7 +146,7 @@ export default function Home() {
             هل أنت مستعد لتحويل تعلمك؟
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            انضم إلى إدارس اليوم واحصل على المئات من الدورات التي يدرسها معلمون خبراء
+            انضم إلى eDariss اليوم واحصل على المئات من الدورات التي يدرسها معلمون خبراء
           </p>
           <Link
             href="/register"

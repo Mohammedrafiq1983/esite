@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Video, Users, Clock, Calendar, User } from "lucide-react";
 
 export const metadata = {
-  title: "الصفوف المباشرة - إدارس",
+  title: "الصفوف المباشرة - eDariss",
   description: "احضر صفوفاً مباشرة تفاعلية مع أفضل المعلمين. صفوف في الرياضيات، الفيزياء، الكيمياء والعلوم للمنهج العراقي",
 };
 

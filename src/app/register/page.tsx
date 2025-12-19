@@ -3,8 +3,8 @@ import { GraduationCap, UserCheck, ArrowRight, BookOpen, Users, Award } from 'lu
 import { Button } from '@/components/ui/button';
 
 export const metadata = {
-  title: 'إنشاء حساب - إدارس',
-  description: 'انضم إلى منصة إدارس التعليمية كطالب أو معلم',
+  title: 'إنشاء حساب - eDariss',
+  description: 'انضم إلى منصة eDariss التعليمية كطالب أو معلم',
 };
 
 export default function RegisterPage() {
@@ -15,14 +15,14 @@ export default function RegisterPage() {
         <div className="text-center mb-16 animate-fade-in">
           <Link href="/" className="inline-block mb-6">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
-              إدارس
+              eDariss
             </h1>
           </Link>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             ابدأ رحلتك التعليمية اليوم
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            اختر نوع حسابك للانضمام إلى منصة إدارس التعليمية
+            اختر نوع حسابك للانضمام إلى منصة eDariss التعليمية
           </p>
         </div>
 
