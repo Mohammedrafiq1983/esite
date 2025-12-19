@@ -70,7 +70,7 @@ export default function TeacherRegisterPage() {
                     <Input
                       id="lastName"
                       type="text"
-                      placeholder="العتيبي"
+                      placeholder="العبيدي"
                       className="pr-10 h-12 border-gray-200 focus:border-secondary-orange focus:ring-secondary-orange transition-all duration-200 hover:border-gray-300"
                       required
                     />
@@ -105,7 +105,7 @@ export default function TeacherRegisterPage() {
                   <Input
                     id="phone"
                     type="tel"
-                    placeholder="+966 5X XXX XXXX"
+                    placeholder="+964 770 123 4567"
                     className="pr-10 h-12 border-gray-200 focus:border-secondary-orange focus:ring-secondary-orange transition-all duration-200 hover:border-gray-300"
                     required
                   />
@@ -141,9 +141,8 @@ export default function TeacherRegisterPage() {
                       <option value="HISTORY">التاريخ</option>
                       <option value="GEOGRAPHY">الجغرافيا</option>
                       <option value="ISLAMIC">التربية الإسلامية</option>
-                      <option value="COMPUTER">الحاسب الآلي</option>
+                      <option value="COMPUTER">الحاسبة</option>
                       <option value="ART">الفنون</option>
-                      <option value="MUSIC">الموسيقى</option>
                       <option value="PE">التربية البدنية</option>
                       <option value="OTHER">أخرى</option>
                     </select>
@@ -180,7 +179,7 @@ export default function TeacherRegisterPage() {
                   <textarea
                     id="qualifications"
                     rows={3}
-                    placeholder="مثال: بكالوريوس في الرياضيات من جامعة الملك سعود، ماجستير في التربية..."
+                    placeholder="مثال: بكالوريوس في الرياضيات من جامعة كركوك ماجستير في التربية..."
                     className="pr-10 w-full rounded-md border border-gray-200 focus:border-secondary-orange focus:ring-secondary-orange transition-all duration-200 hover:border-gray-300 p-3"
                     required
                   />

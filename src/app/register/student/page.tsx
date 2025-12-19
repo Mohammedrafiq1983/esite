@@ -137,12 +137,12 @@ export default function StudentRegisterPage() {
                       <option value="GRADE_4">الصف الرابع</option>
                       <option value="GRADE_5">الصف الخامس</option>
                       <option value="GRADE_6">الصف السادس</option>
-                      <option value="GRADE_7">الصف السابع</option>
-                      <option value="GRADE_8">الصف الثامن</option>
-                      <option value="GRADE_9">الصف التاسع</option>
-                      <option value="GRADE_10">الصف العاشر</option>
-                      <option value="GRADE_11">الصف الحادي عشر</option>
-                      <option value="GRADE_12">الصف الثاني عشر</option>
+                      <option value="GRADE_7"> اول متوسط</option>
+                      <option value="GRADE_8"> الثاني متوسط</option>
+                      <option value="GRADE_9"> الثالث متوسط</option>
+                      <option value="GRADE_10"> الرابع الاعدادي</option>
+                      <option value="GRADE_11"> الخامس الاعدادي</option>
+                      <option value="GRADE_12"> السادس الاعدادي</option>
                       <option value="UNIVERSITY">جامعي</option>
                     </select>
                   </div>

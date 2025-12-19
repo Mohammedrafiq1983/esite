@@ -16,7 +16,7 @@ export default function Home() {
             <span className="text-primary-600"> العراق</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            انضم لآلاف الطلاب الذين يحصلون على تعليم عالي الجودة من خلال الصفوف المباشرة،
+            انضم الينا للحصول على تعليم عالي الجودة من خلال الصفوف المباشرة،
             الدروس المسجلة، ومسارات التعلم الشخصية.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

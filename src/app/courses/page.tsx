@@ -113,7 +113,7 @@ export default function CoursesPage() {
             الدورات المتاحة
           </h1>
           <p className="text-xl text-primary-100 max-w-2xl mx-auto">
-            اكتشف مئات الدورات التعليمية في جميع المواد الدراسية
+            اكتشف الدورات التعليمية في جميع المواد الدراسية
           </p>
         </div>
       </section>
