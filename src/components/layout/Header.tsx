@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Menu } from "lucide-react";
 
 export function Header() {
@@ -34,8 +35,15 @@ export function Header() {
         </nav>
 
         {/* Logo (Left in RTL) */}
-        <Link href="/" className="text-2xl font-bold text-primary-600">
-          eDariss
+        <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <Image
+            src="/eDariss_logo.png"
+            alt="eDariss Logo"
+            width={120}
+            height={40}
+            priority
+            className="object-contain"
+          />
         </Link>
 
         {/* Mobile Menu */}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -7,7 +8,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About + Location */}
           <div>
-            <h3 className="text-white text-lg font-bold mb-4">eDariss</h3>
+            <div className="mb-4">
+              <Image
+                src="/eDariss_logo.png"
+                alt="eDariss Logo"
+                width={140}
+                height={47}
+                className="object-contain brightness-0 invert"
+              />
+            </div>
             <p className="mb-4 text-sm leading-relaxed">
               منصة التعليم الإلكتروني الرائدة في العراق
             </p>
