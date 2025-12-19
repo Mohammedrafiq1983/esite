@@ -292,8 +292,8 @@ export default function PrivacyPage() {
                       <p className="font-semibold text-gray-900 mb-3">منصة eDariss</p>
                       <ul className="space-y-2 text-sm">
                         <li>البريد الإلكتروني: <a href="mailto:privacy@edariss.com" className="text-primary-600 hover:text-primary-800">privacy@edariss.com</a></li>
-                        <li>الهاتف: <span dir="ltr">+966 12 345 6789</span></li>
-                        <li>العنوان: الرياض، المملكة العربية السعودية</li>
+                        <li>الهاتف: <span dir="ltr">+964 780 123 4567</span></li>
+                        <li>العنوان: كركوك، جمهورية العراق</li>
                       </ul>
                     </div>
                   </div>

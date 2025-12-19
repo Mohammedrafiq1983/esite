@@ -51,8 +51,8 @@ export default function ContactPage() {
                   <Phone className="h-7 w-7 text-secondary-green group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">الهاتف</h3>
-                <a href="tel:+966123456789" className="text-primary-600 hover:text-primary-800 transition-colors" dir="ltr">
-                  +966 12 345 6789
+                <a href="tel:+9647801234567" className="text-primary-600 hover:text-primary-800 transition-colors" dir="ltr">
+                  +964 780 123 4567
                 </a>
               </div>
 
@@ -63,7 +63,7 @@ export default function ContactPage() {
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">العنوان</h3>
                 <p className="text-gray-600 text-sm">
-                  الرياض، المملكة العربية السعودية
+                  كركوك، جمهورية العراق
                 </p>
               </div>
 
@@ -276,7 +276,7 @@ export default function ContactPage() {
           <div className="w-full h-full flex items-center justify-center">
             <div className="text-center">
               <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600">الرياض، المملكة العربية السعودية</p>
+              <p className="text-gray-600">كركوك، جمهورية العراق</p>
             </div>
           </div>
         </section>
