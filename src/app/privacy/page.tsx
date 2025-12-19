@@ -1,6 +1,6 @@
 import { Shield, Lock, Eye, UserCheck, Database, AlertCircle } from 'lucide-react';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 
 export const metadata = {
   title: 'سياسة الخصوصية - إدارس',

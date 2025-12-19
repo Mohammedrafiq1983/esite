@@ -1,6 +1,6 @@
 import { FileText, Scale, UserCheck, AlertTriangle, Shield, Ban } from 'lucide-react';
-import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
 
 export const metadata = {
   title: 'شروط الخدمة - إدارس',
