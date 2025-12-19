@@ -7,7 +7,7 @@ import { Footer } from '@/components/layout/Footer';
 
 export const metadata = {
   title: 'الأسعار والباقات - eDariss',
-  description: 'اختر الباقة المناسبة لك وابدأ رحلتك التعليمية مع eDariss',
+  description: 'اختر الباقة المناسبة لك وابدأ رحلتك التعليمية مع eDariss - أسعار بالدينار العراقي مع إمكانية الدفع نقداً في بغداد',
 };
 
 const pricingPlans = [
@@ -15,7 +15,7 @@ const pricingPlans = [
     name: 'المجاني',
     price: '0',
     period: 'مجاني للأبد',
-    description: 'مثالي للمبتدئين الذين يرغبون في تجربة المنصة',
+    description: 'مثالي للطلاب العراقيين المبتدئين الذين يرغبون في تجربة المنصة',
     icon: Star,
     color: 'primary',
     features: [
@@ -33,9 +33,9 @@ const pricingPlans = [
   },
   {
     name: 'الأساسي',
-    price: '99',
+    price: '125,000',
     period: 'شهرياً',
-    description: 'للطلاب الذين يريدون تعلماً منظماً',
+    description: 'للطلاب العراقيين الذين يريدون تعلماً منظماً',
     icon: Zap,
     color: 'green',
     popular: true,
@@ -55,9 +55,9 @@ const pricingPlans = [
   },
   {
     name: 'المتميز',
-    price: '199',
+    price: '250,000',
     period: 'شهرياً',
-    description: 'للطلاب الجادين الباحثين عن التميز',
+    description: 'للطلاب العراقيين الجادين الباحثين عن التميز',
     icon: Crown,
     color: 'orange',
     features: [
@@ -89,11 +89,17 @@ export default function PricingPage() {
                 خطط الأسعار
               </h1>
               <p className="text-xl text-primary-100 mb-8">
-                اختر الباقة التي تناسب احتياجاتك وابدأ رحلتك التعليمية اليوم
+                اختر الباقة التي تناسب احتياجاتك وابدأ رحلتك التعليمية اليوم - أسعار بالدينار العراقي
               </p>
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
-                <Check className="h-5 w-5 text-secondary-green" />
-                <span>جميع الباقات تشمل فترة تجريبية مجانية لمدة 7 أيام</span>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
+                  <Check className="h-5 w-5 text-secondary-green" />
+                  <span>جميع الباقات تشمل فترة تجريبية مجانية لمدة 7 أيام</span>
+                </div>
+                <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
+                  <Check className="h-5 w-5 text-secondary-green" />
+                  <span>إمكانية الدفع نقداً في مكتبنا بحي الواسطي</span>
+                </div>
               </div>
             </div>
           </div>
@@ -161,7 +167,7 @@ export default function PricingPage() {
                         <span className="text-5xl font-bold text-gray-900">
                           {plan.price}
                         </span>
-                        <span className="text-gray-600">ريال</span>
+                        <span className="text-gray-600">دينار</span>
                       </div>
                       <p className="text-gray-500 text-sm mt-1">{plan.period}</p>
                     </div>
@@ -252,7 +258,7 @@ export default function PricingPage() {
                     ما هي طرق الدفع المقبولة؟
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    نقبل جميع بطاقات الائتمان والخصم (Visa, Mastercard, Mada)، بالإضافة إلى Apple Pay والمحافظ الإلكترونية.
+                    نقبل جميع بطاقات الائتمان والخصم (Visa, Mastercard)، بالإضافة إلى المحافظ الإلكترونية والتحويل البنكي. كما يمكنك الدفع نقداً بالدينار العراقي من خلال زيارة مكتبنا في حي الواسطي، بغداد.
                   </p>
                 </div>
 

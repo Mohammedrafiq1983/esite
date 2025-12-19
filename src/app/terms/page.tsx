@@ -184,13 +184,13 @@ export default function TermsPage() {
                   <div className="mr-13 text-gray-700 leading-relaxed space-y-4">
                     <h3 className="text-lg font-semibold text-gray-900">5.1 الأسعار</h3>
                     <ul className="list-disc mr-6 space-y-2">
-                      <li>جميع الأسعار معروضة بالريال السعودي</li>
+                      <li>جميع الأسعار معروضة بالدينار العراقي</li>
                       <li>نحتفظ بالحق في تغيير الأسعار في أي وقت</li>
                       <li>أي تغيير في الأسعار لن يؤثر على الاشتراكات الحالية</li>
                     </ul>
 
                     <h3 className="text-lg font-semibold text-gray-900 mt-6">5.2 طرق الدفع</h3>
-                    <p>نقبل الدفع عبر بطاقات الائتمان والخصم والمحافظ الإلكترونية.</p>
+                    <p>نقبل الدفع عبر بطاقات الائتمان والخصم، المحافظ الإلكترونية، والتحويل البنكي. كما يمكنكم الدفع نقداً بالدينار العراقي من خلال زيارة مكتبنا في حي الواسطي، بغداد.</p>
 
                     <h3 className="text-lg font-semibold text-gray-900 mt-6">5.3 سياسة الاسترداد</h3>
                     <ul className="list-disc mr-6 space-y-2">
@@ -303,7 +303,7 @@ export default function TermsPage() {
                   </h2>
                   <div className="mr-13 text-gray-700 leading-relaxed space-y-4">
                     <p>
-                      تخضع هذه الشروط وتفسر وفقاً لقوانين المملكة العربية السعودية. أي نزاع ناشئ عن هذه الشروط سيخضع للاختصاص القضائي الحصري للمحاكم في الرياض.
+                      تخضع هذه الشروط وتفسر وفقاً لقوانين جمهورية العراق. أي نزاع ناشئ عن هذه الشروط سيخضع للاختصاص القضائي الحصري للمحاكم في بغداد.
                     </p>
                   </div>
                 </div>
@@ -324,8 +324,8 @@ export default function TermsPage() {
                       <p className="font-semibold text-gray-900 mb-3">منصة eDariss</p>
                       <ul className="space-y-2 text-sm">
                         <li>البريد الإلكتروني: <a href="mailto:legal@edariss.com" className="text-primary-600 hover:text-primary-800">legal@edariss.com</a></li>
-                        <li>الهاتف: <span dir="ltr">+966 12 345 6789</span></li>
-                        <li>العنوان: الرياض، المملكة العربية السعودية</li>
+                        <li>الهاتف: <span dir="ltr">+964 780 123 4567</span></li>
+                        <li>العنوان: حي الواسطي، بغداد، جمهورية العراق</li>
                       </ul>
                     </div>
                   </div>
